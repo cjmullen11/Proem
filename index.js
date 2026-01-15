@@ -8,5 +8,3 @@ function pow(num, power = 0) {
     }
     return powing(power, 1);
 }
-
-// test
