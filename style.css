@@ -22,7 +22,6 @@ h1 {
     grid-column: 2 / 2;
 }
 
-#cv,
 #projects {
     grid-column: 2 / 2;
     margin-top: 0px;
@@ -35,7 +34,7 @@ h1 {
 
 #nav {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(4, auto);
     margin-bottom: 45px;
 }
 
@@ -111,9 +110,14 @@ hr {
     grid-column: 2 / 2;
 }
 
-#cv-title,
 #projects-title {
     text-align: center;
     margin-top: 0;
     margin-bottom: 20px;
+}
+
+iframe {
+    border: none;
+    border-radius: 8px;
+    grid-column: 2 / 2;
 }
