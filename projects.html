@@ -4,40 +4,43 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Me -Chris Mullen</title>
+    <title>Projects-Chris Mullen</title>
     <style>
         @import url('style.css');
     </style>
 </head>
 
 <body>
-</body>
-<!--Overall grid panel-->
-<div id="page">
-    <div id="header">
-        <div id="nav">
-            <a class="nav" href="home.html">Home</a>
-            <a class="nav" href="cv.html">CV</a>
-            <a class="nav" href="projects.html">Projects</a>
-            <a class="nav" href="contact.html">Contact</a>
-        </div>
-    </div>
-    <div id="projects">
-        <h1 id="projects-title">Projects</h1>
-        <div class="entry">
-            <h3 class="entry-title">Title</h3>
-            <h4 class="entry-status"><i>duration</i></h4>
-            <h5 class="entry-subtitle">Company</h5>
-            <div class="entry-description">
-                <p>Description</p>
-            </div>
-        </div>
-    </div>
-    <hr>
-    <div id="footer">
-        <p>footer content</p>
-    </div>
+    <!--Overall grid panel-->
+    <div id="page">
+        <main id="projects">
+            <h1>Projects</h1>
 
-</div>
+            <article class="entry">
+                <div class="entry-header">
+                    <h2 class="entry-title">
+                        <a href="https://github.com/username/project" target="_blank" rel="noopener noreferrer">
+                            Project Name
+                        </a>
+                    </h2>
+                    <span class="entry-status">2026</span>
+                </div>
+
+                <p class="entry-subtitle">Python | OpenCV | NumPy</p>
+
+                <div class="entry-description">
+                    <p>
+                        Brief overview of the project, its purpose,
+                        and the problems it solves.
+                    </p>
+                </div>
+            </article>
+        </main>
+        <div id="footer">
+            <p>footer content</p>
+        </div>
+
+    </div>
+</body>
 
 </html>
