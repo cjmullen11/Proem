@@ -2,105 +2,214 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - Chris Mullen</title>
-    <style>
-        @import url('style.css');
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!--Overall grid panel-->
     <div id="page">
-        <div id="header">
-            <div id="nav">
+        <header id="header">
+            <nav id="nav" aria-label="Main navigation">
                 <a class="nav" href="home.html">Home</a>
-                <a class="nav" href="cv.html">CV</a>
+                <a class="nav" href="cv.html" aria-current="page">CV</a>
                 <a class="nav" href="projects.html">Projects</a>
                 <a class="nav" href="contact.html">Contact</a>
-            </div>
-        </div>
+            </nav>
+        </header>
         <main id="cv">
             <h1 id="cv-title">Curriculum Vitae</h1>
 
-            <section class="cv-section">
-                <h2>Experience</h2>
+            <!--
+                CV ORGANIZATION
+                ---------------
+                Education and honors appear first while the degree is in progress.
+                Experience follows by category: research, professional, volunteer.
+                Within experience sections, list roles in reverse chronological
+                order using the most recent appointment (including returning roles).
+                Distinctive honors appear before recurring academic recognition.
+            -->
+            <section class="cv-section cv-section--education">
+                <h2 class="cv-section-title">Education</h2>
 
-                <article class="entry">
+                <article class="entry entry--cv">
                     <div class="entry-header">
-                        <h3 class="entry-title">Job Title</h3>
-                        <span class="entry-status">2024 – Present</span>
+                        <h3 class="entry-title">Computer Science and Human Physiology, Bachelor of Science</h3>
+                        <span class="entry-status">September 2023 – April 2027 (expected)</span>
                     </div>
-
-                    <p class="entry-subtitle">Company Name</p>
-
+                    <p class="entry-subtitle">University of Minnesota Twin Cities, College of Science and Engineering
+                    </p>
                     <div class="entry-description">
-                        <p>Description of responsibilities and accomplishments.</p>
-                    </div>
-                </article>
-                <article class="entry">
-                    <div class="entry-header">
-                        <h3 class="entry-title">Job Title</h3>
-                        <span class="entry-status">2024 – Present</span>
-                    </div>
-
-                    <p class="entry-subtitle">Company Name</p>
-
-                    <div class="entry-description">
-                        <p>Description of responsibilities and accomplishments.</p>
-                    </div>
-                </article>
-                <article class="entry">
-                    <div class="entry-header">
-                        <h3 class="entry-title">Job Title</h3>
-                        <span class="entry-status">2024 – Present</span>
-                    </div>
-
-                    <p class="entry-subtitle">Company Name</p>
-
-                    <div class="entry-description">
-                        <p>Description of responsibilities and accomplishments.</p>
+                        <p>Relevant coursework includes biochemistry, calculus, classical and modern machine learning,
+                            internet programming, organic and general chemistry, operating systems, physiology,
+                            psychology, and sociology.</p>
                     </div>
                 </article>
             </section>
+
+            <section class="cv-section cv-section--honors">
+                <h2 class="cv-section-title">Honors &amp; Awards</h2>
+
+                <article class="entry entry--cv">
+                    <div class="entry-header">
+                        <h3 class="entry-title">Life Saving Award</h3>
+                        <span class="entry-status">November 8, 2025</span>
+                    </div>
+                    <p class="entry-subtitle">University of Minnesota EMS</p>
+                    <div class="entry-description">
+                        <p>Recognized for outstanding actions during a cardiac arrest response at a University of
+                            Minnesota football game.</p>
+                    </div>
+                </article>
+
+                <article class="entry entry--cv">
+                    <div class="entry-header">
+                        <h3 class="entry-title">Dean’s List</h3>
+                        <span class="entry-status">Spring 2025 – Spring 2026</span>
+                    </div>
+                    <p class="entry-subtitle">University of Minnesota</p>
+                    <div class="entry-description">
+                        <p>Named to the Dean’s List for Spring 2025, Summer 2025, Fall 2025, and Spring 2026.</p>
+                    </div>
+                </article>
+            </section>
+
             <section class="cv-section">
-                <h2>Experience</h2>
+                <h2 class="cv-section-title">Research Experience</h2>
 
-                <article class="entry">
+                <article class="entry entry--cv">
                     <div class="entry-header">
-                        <h3 class="entry-title">Job Title</h3>
-                        <span class="entry-status">2024 – Present</span>
+                        <h3 class="entry-title">Research Assistant</h3>
+                        <span class="entry-status">May 2026 – Present</span>
                     </div>
-
-                    <p class="entry-subtitle">Company Name</p>
-
+                    <p class="entry-subtitle">Lillehei Heart Institute – University of Minnesota Medical School</p>
                     <div class="entry-description">
-                        <p>Description of responsibilities and accomplishments.</p>
+                        <p>Collaborate with Dr. Markus Meyer on cardiovascular research. Independently developed a
+                            cardiac pacemaker data analysis tool to support clinical research, drawing on expertise in
+                            computer science and human physiology.</p>
                     </div>
                 </article>
-                <article class="entry">
+
+                <article class="entry entry--cv">
                     <div class="entry-header">
-                        <h3 class="entry-title">Job Title</h3>
-                        <span class="entry-status">2024 – Present</span>
+                        <h3 class="entry-title">Lead Research &amp; Quality Improvement Intern</h3>
+                        <span class="entry-status">May 2025 – Present</span>
                     </div>
-
-                    <p class="entry-subtitle">Company Name</p>
-
+                    <p class="entry-subtitle">Hennepin Healthcare Research Institute</p>
                     <div class="entry-description">
-                        <p>Description of responsibilities and accomplishments.</p>
+                        <p>Lead and train research team members and perform quality assurance on study activities.
+                            Coordinate patient recruitment, informed consent, and data collection for emergency medicine
+                            studies, maintaining accurate REDCap records and collaborating with physicians and study
+                            coordinators.</p>
                     </div>
                 </article>
-                <article class="entry">
+            </section>
+
+            <section class="cv-section">
+                <h2 class="cv-section-title">Professional Experience</h2>
+
+                <article class="entry entry--cv">
                     <div class="entry-header">
-                        <h3 class="entry-title">Job Title</h3>
-                        <span class="entry-status">2024 – Present</span>
+                        <h3 class="entry-title">Teaching Assistant</h3>
+                        <span class="entry-status">Sep 2024 – Jan 2025; Sep 2026 – Present</span>
                     </div>
-
-                    <p class="entry-subtitle">Company Name</p>
-
+                    <p class="entry-subtitle">University of Minnesota College of Science and Engineering</p>
                     <div class="entry-description">
-                        <p>Description of responsibilities and accomplishments.</p>
+                        <p>Collaborate with course instructors to deliver instruction and tutor undergraduate students
+                            in CSCI 1113 (C/C++) and CSE 1001.</p>
+                    </div>
+                </article>
+
+                <article class="entry entry--cv">
+                    <div class="entry-header">
+                        <h3 class="entry-title">Emergency Medical Responder</h3>
+                        <span class="entry-status">April 2026 – Present</span>
+                    </div>
+                    <p class="entry-subtitle">Hennepin Healthcare</p>
+                    <div class="entry-description">
+                        <p>Provide emergency medical care as an EMT at sporting venues and other events throughout the
+                            metropolitan area. Coordinate personnel and resources to support organized, timely
+                            responses.</p>
+                    </div>
+                </article>
+
+                <article class="entry entry--cv">
+                    <div class="entry-header">
+                        <h3 class="entry-title">Phlebotomist</h3>
+                        <span class="entry-status">August 2025 – May 2026</span>
+                    </div>
+                    <p class="entry-subtitle">BioLife</p>
+                    <div class="entry-description">
+                        <p>Performed phlebotomy and plasmapheresis procedures, monitored donors, and responded to
+                            adverse reactions to support donor safety.</p>
+                    </div>
+                </article>
+
+                <article class="entry entry--cv">
+                    <div class="entry-header">
+                        <h3 class="entry-title">Emergency Department Technician</h3>
+                        <span class="entry-status">August 2024 – July 2025</span>
+                    </div>
+                    <p class="entry-subtitle">Allina Health</p>
+                    <div class="entry-description">
+                        <p>Provided direct patient care in collaboration with physicians and clinical staff, including
+                            venipuncture, point-of-care testing, and electrocardiogram (ECG) acquisition. Maintained
+                            clinical equipment and treatment areas.</p>
+                    </div>
+                </article>
+
+                <article class="entry entry--cv">
+                    <div class="entry-header">
+                        <h3 class="entry-title">Operations Supervisor</h3>
+                        <span class="entry-status">March–August 2022, 2023, 2024</span>
+                    </div>
+                    <p class="entry-subtitle">Bunker Beach Water Park</p>
+                    <div class="entry-description">
+                        <p>Led, trained, and certified more than 150 staff members and developed and revised site
+                            medical protocols. Taught and certified nearly 1,000 participants in basic life support
+                            skills through the American Red Cross.</p>
+                    </div>
+                </article>
+            </section>
+
+            <section class="cv-section">
+                <h2 class="cv-section-title">Volunteer Experience</h2>
+
+                <article class="entry entry--cv">
+                    <div class="entry-header">
+                        <h3 class="entry-title">Volunteer EMT</h3>
+                        <span class="entry-status">September 2024 – Present</span>
+                    </div>
+                    <p class="entry-subtitle">University of Minnesota EMS</p>
+                    <div class="entry-description">
+                        <p>Provide emergency medical care at university sporting events and other campus activities.
+                            Coordinate medical staff coverage across venues and train new team members.</p>
+                    </div>
+                </article>
+
+                <article class="entry entry--cv">
+                    <div class="entry-header">
+                        <h3 class="entry-title">Undergraduate Advisor</h3>
+                        <span class="entry-status">September 2024 – Present</span>
+                    </div>
+                    <p class="entry-subtitle">University of Minnesota College of Science and Engineering</p>
+                    <div class="entry-description">
+                        <p>Advise university leadership on curriculum and academic planning, communicating student
+                            perspectives and feedback to senior administrators, including the president and provosts.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="entry entry--cv">
+                    <div class="entry-header">
+                        <h3 class="entry-title">CPR Instructor, EKG Technician</h3>
+                        <span class="entry-status">Intermittently</span>
+                    </div>
+                    <p class="entry-subtitle">Play for Patrick Foundation</p>
+                    <div class="entry-description">
+                        <p>Teach bystander CPR at community cardiac health awareness events and perform
+                            electrocardiograms (EKGs) during community screening events.</p>
                     </div>
                 </article>
             </section>

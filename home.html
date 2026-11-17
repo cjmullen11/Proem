@@ -2,45 +2,53 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Me -Chris Mullen</title>
-    <style>
-        @import url('style.css');
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Chris Mullen</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!--Overall grid panel-->
     <div id="page">
-        <div id="header">
-            <div id="header">
-                <div id="nav">
-                    <a class="nav" href="home.html">Home</a>
-                    <a class="nav" href="cv.html">CV</a>
-                    <a class="nav" href="projects.html">Projects</a>
-                    <a class="nav" href="contact.html">Contact</a>
+        <header id="header">
+            <nav id="nav" aria-label="Main navigation">
+                <a class="nav" href="home.html" aria-current="page">Home</a>
+                <a class="nav" href="cv.html">CV</a>
+                <a class="nav" href="projects.html">Projects</a>
+                <a class="nav" href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <main id="about-me">
+            <header id="title">
+                <img src="images/ChrisMullen.jpg" alt="Chris Mullen" id="pic" width="140" height="185">
+                <div class="about-hero-copy">
+                    <h1 id="about-me-title">About Me</h1>
+                    <p class="about-summary">Student · Researcher · EMT</p>
+                </div>
+            </header>
+
+            <div class="about-content">
+                <p>
+                    I study Computer Science and Human Physiology at the University of Minnesota,
+                    where I combine my interests in healthcare and technology. As a researcher
+                    and EMT, I enjoy applying what I learn to meaningful work in my community.
+                </p>
+                <p>
+                    My clinical interests include patient care and research, particularly in
+                    cardiology, emergency medicine, and medical devices. My technical interests
+                    include software development, data science, and machine learning.
+                </p>
+                <p>
+                    I plan to pursue medical school (MD) and may also pursue graduate research (PhD).
+                </p>
+
+                <div class="about-actions" aria-label="Explore more">
+                    <a class="about-link" href="cv.html">View my CV</a>
+                    <a class="about-link" href="projects.html">Explore projects</a>
                 </div>
             </div>
-        </div>
-        <div id="about-me">
-            <div id="title">
-                <img src="images/ChrisMullen.jpg" alt="Chris Mullen" id="pic">
-                <h1 id="about-me-title">About Me</h1>
-            </div>
-            <p>My name is Chris Mullen. I am a web developer and a student at the University of Massachusetts Amherst. I
-                am
-                currently studying computer science and I am interested in web development, game development, and
-                artificial
-                intelligence. I have experience with HTML, CSS, JavaScript, Python, and C++. I am always looking to
-                learn
-                new technologies and improve my skills.</p>
-        </div>
-        <hr>
-        <div id="footer">
-            <p>footer content</p>
-        </div>
-
+        </main>
     </div>
 </body>
 
