@@ -1,2 +1,4 @@
 *.pdf
 images/*
+*.sh
+deploy.sh
